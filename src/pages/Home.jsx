@@ -9,11 +9,11 @@ import About from "../components/About";
 const Home = () => (
   <>
     <Navbar />
-    <Hero />
+    {/* <Hero /> */}
     <About />
     {/* <Interviews /> */}
-    <Gallery />
-    <VideoSection />
+    {/* <Gallery /> */}
+    {/* <VideoSection /> */}
   </>
 );
 export default Home;
