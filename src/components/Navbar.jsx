@@ -18,9 +18,9 @@ const Navbar = () => {
           <Link to="/interviews">
             {lang === "ur" ? "انٹرویوز" : "Interviews"}
           </Link>
-          <Link to="/gallery">
+          {/* <Link to="/gallery">
             {lang === "ur" ? "گیلری" : "Gallery"}
-          </Link>
+          </Link> */}
           {/* <Link to="/videos">
             {lang === "ur" ? "ویڈیوز" : "Videos"}
           </Link> */}

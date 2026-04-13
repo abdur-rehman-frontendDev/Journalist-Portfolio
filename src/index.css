@@ -28,13 +28,13 @@ li {
 
 /* Layout */
 .container {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: auto;
   padding: 20px;
 }
 
 .section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 /* Title */
