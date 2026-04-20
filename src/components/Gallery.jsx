@@ -4,12 +4,17 @@ const Gallery = () => {
   const images = [
     "https://via.placeholder.com/400",
     "https://via.placeholder.com/400",
-    "https://via.placeholder.com/400"
+    "https://via.placeholder.com/400",
   ];
 
   return (
-    <div className="container section">
-      <h2 className="title">میڈیا گیلری</h2>
+    <div className="galleryContainer">
+      <h1>
+        جلد آرہا ہے<span className="dot">.</span>
+      </h1>
+      <p>ہم اپنی ویب سائٹ بنا رہے ہیں۔</p>
+
+      {/* <h2 className="title">میڈیا گیلری</h2>
 
       <div style={{
         display: "grid",
@@ -24,7 +29,7 @@ const Gallery = () => {
             whileHover={{ scale: 1.1 }}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

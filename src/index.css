@@ -34,7 +34,7 @@ li {
 }
 
 .section {
-  padding: 40px 0;
+  padding: 40px;
 }
 
 /* Title */
@@ -78,16 +78,26 @@ a {
 
 /* Hero */
 .hero {
-  text-align: center;
-  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
-.hero h1 {
-  font-size: 48px;
+@media screen and (max-width: 659px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero h4 {
+  font-size: 18px;
+  margin: 0px;
 }
 
 .hero p {
-  opacity: 0.8;
+  font-size: 16px;
+  opacity: 0.6;
+  margin: 0px;
 }
 
 /* Navbar Style */
@@ -249,4 +259,56 @@ a {
   .about-content {
     width: 100%;
   }
+}
+
+/* Gallery */
+
+@keyframes fadeIn {
+  from {
+    top: 20%;
+    opacity: 0;
+  }
+  to {
+    top: 100;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    top: 20%;
+    opacity: 0;
+  }
+  to {
+    top: 100;
+    opacity: 1;
+  }
+}
+
+.galleryContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  animation: fadeIn 1000ms ease;
+  -webkit-animation: fadeIn 1000ms ease;
+}
+
+.galleryContainer h1 {
+  font-size: 64px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.galleryContainer .dot {
+  color: #ff7f57;
+}
+
+.galleryContainer p {
+  text-align: center;
+  margin: 18px;
+  font-family: "Muli", sans-serif;
+  font-weight: normal;
 }
